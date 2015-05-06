@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../jquery.smarttabs.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tabs').smartTabs()
+        });
+    </script>
+    <style>
+        body,html,ul,li{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+        .tabs-head{
+            
+        }
+        .tabs-body>div{
+            display: none;
+            font-size: 1.8rem;
+            padding: 0.5rem;
+        }
+        .tabs-body{
+            margin-top: -1px;;
+            border:1px solid #666;
+            /*border-top: none;*/
+            width:50%;
+        }
+        @media (max-width: 640px) {
+            .tabs-body{
+                width:100%;
+            }
+        }
+        .inline-list{
+        }
+        .inline-list>li{
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #ddd;
+        }
+        .inline-list>li>a{
+            font-size: 2rem;
+            font-weight: bold;
+            color:#333;
+            text-decoration: none;
+        }
+        .b-section{
+            padding: 0 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="b-section">
+        <h1>Jquery smart plugin demo</h1>
+    </section>
+    <section class="b-section">
+    <div class="tabs">
+        <div class="tabs-head">
+            <ul class="inline-list">
+                <li><a href="#first" data-trigger>first</a></li>
+                <li><a href="#second" data-trigger>second</a></li>
+                <li><a href="#third" data-trigger>third</a></li>
+            </ul>
+        </div>
+        <div class="tabs-body">
+            <div data-content="first" style="display: block">
+                <p>Mauris quis nunc tincidunt, tristique justo vel, auctor nisi. Pellentesque gravida luctus tellus, sed porttitor ex suscipit id. Nulla vitae mollis mauris. Vivamus eu congue ligula. Sed eget justo nisl. Ut non metus pulvinar, facilisis elit mollis, sodales lacus. Duis aliquet, nulla ut efficitur dignissim, quam lorem bibendum odio, ut ornare orci mi vel sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis ullamcorper odio eu nisi vulputate molestie. Vestibulum orci ligula, tempor non pellentesque in, blandit tempus mi. Nulla vestibulum dapibus lacus quis ultricies. Pellentesque dapibus eget augue sit amet elementum. Duis id facilisis risus. Integer mollis justo mauris, ut facilisis libero ultricies non.</p>
+
+                <p>Curabitur semper eleifend dolor lobortis scelerisque. Pellentesque pretium ligula nulla, at bibendum libero viverra non. Morbi aliquam urna at quam viverra imperdiet. Suspendisse potenti. Nulla neque ex, iaculis eu placerat nec, convallis in sapien. Aenean quis lobortis neque. Duis placerat diam sapien. Nullam ac malesuada orci.</p>
+            </div>
+            <div data-content="second">
+                <p>Sed a mollis purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas tempus arcu non nulla ultricies, ultricies aliquet risus pharetra. Cras aliquam tristique turpis ac semper. Duis pharetra eget nisl eget pharetra. In ornare leo ante, a varius ipsum dictum ut. Morbi vel turpis molestie, porta nisl at, aliquam dui. Donec tempor tellus nunc, id gravida mi dapibus eget. Suspendisse et gravida libero. Curabitur suscipit ligula est, id consectetur quam gravida at. Integer ut tristique nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, erat sed mattis egestas, arcu diam bibendum leo, eget sodales urna nunc ut eros. Suspendisse dictum nibh maximus, bibendum enim quis, fermentum est. Praesent molestie, felis in hendrerit dapibus, sem felis mollis augue, eu feugiat libero urna ac lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                <p>Donec diam lectus, sagittis vel lectus ac, semper ultrices odio. Sed fringilla porta sagittis. Suspendisse mi sem, tempus lobortis ante sed, varius venenatis orci. Donec quis tempor magna. Integer dictum ex a nunc gravida sagittis. Donec commodo, sapien quis eleifend condimentum, nibh tortor dapibus mauris, euismod efficitur sapien tellus sed ipsum. Duis et egestas ligula. Suspendisse potenti. Donec egestas dictum lectus, vitae euismod dui lacinia vel. Morbi mattis vulputate auctor. Nulla dolor leo, aliquam in pulvinar dignissim, venenatis sed justo. Proin ornare est id nunc sodales, ut lobortis lacus elementum. Curabitur tempor aliquet vestibulum. Suspendisse posuere ex et est pretium, eget suscipit nunc congue. Duis consectetur a nunc sit amet iaculis.</p>
+
+            </div>
+            <div data-content="third">
+                <p>Morbi non eros lacinia felis fermentum ornare ut pellentesque neque. Aliquam lobortis eleifend quam ac vehicula. Fusce sollicitudin maximus elit, ut vehicula enim maximus sit amet. Curabitur ultrices mi nec elementum placerat. Mauris finibus at enim non mollis. Integer nec elit congue, auctor mi id, auctor arcu. Nam eu tincidunt dolor. In eu fringilla enim. Vivamus nec ante egestas, facilisis nibh eu, mattis mi. Donec non arcu diam. Cras fringilla nisl nulla, vitae vestibulum libero dapibus sit amet. Proin venenatis dui consequat orci consequat iaculis. Curabitur lobortis posuere dictum. Praesent at purus erat. Proin sapien elit, blandit sit amet odio quis, vestibulum mattis augue. Phasellus eros quam, scelerisque at mollis sit amet, pharetra sed nunc.</p>
+
+                <p>Donec in mi ut purus aliquet egestas. Aenean quis eleifend purus. Duis pharetra mi mauris, sit amet venenatis neque volutpat at. Nam eleifend interdum ante, interdum elementum risus mollis a. Cras elementum rhoncus leo, sit amet egestas velit fermentum id. Integer tincidunt, turpis ac dictum pulvinar, ex ante luctus massa, vestibulum volutpat odio nisi vitae eros. Donec finibus cursus lorem quis dictum. Vestibulum sit amet auctor est. Maecenas aliquam, purus id congue eleifend, neque metus pretium arcu, at ullamcorper odio dui a augue. Nam semper augue eu nibh bibendum lobortis. Pellentesque vehicula lorem vel sodales feugiat. Etiam mattis dapibus nisi, id ornare velit consectetur at.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
